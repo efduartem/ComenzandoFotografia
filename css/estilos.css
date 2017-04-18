@@ -1,45 +1,144 @@
+@font-face {
+  font-family: 'DancingScript';
+  src: url('DancingScript-Regular.otf');
+}
+
 body{
   background-color: #02010a;
+  font-family: 'DancingScript';
+}
+
+#contenido{
+  margin: auto;
+  width: 900px;
 }
 
 header{
+  width: 100%;
+  height: 60px;
   background-color: #5b7989;
+  color: white;
   border-radius: 10px 10px 0px 0px;
-  /*width: 100%;*/
-  /*position: fixed;*/
-  /*top: 0;*/
+  -moz-border-radius: 10px 10px 0px 0px;
+  -webkit-border-radius: 10px 10px 0px 0px;
 }
 
 header h1{
-  color: white;
+  font-size: 2em;
   text-shadow: 2px 2px #02010a;
+  height: 90%;
   float: left;
+  padding: 0.5% 2%;
+  margin: 0;
+}
+
+header nav{
+  float: right;
+}
+
+ul.menunav {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+ul.menunav li a {
+    display: block;
+    color: inherit;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+ul.menunav li a.active {text-decoration: none;}
+ul.menunav li {float: left; width: 33.3%;}
+
+img{
+  box-shadow: 2px 2px #02010a;
 }
 
 #principalPicture{
   background-color:  #82c3a6;
-  text-align: center;
+  width: 100%;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 
-.secondaryPicture{
+#principalPicture img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+.secondaryPictureContainer{
   background-color: #d5c75f;
   border: solid 1px;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
 }
 
-#secondaryPictureLeft{
-  background-color: #d5c75f;
-  border: solid 2px;
-}
-
-#secondaryPictureRight{
-  background-color: #d5c75f;
-  border: solid 2px;
+.secondaryPictureItem{
+  border: solid 1px;
+  height: 100px;
+  width: 50%;
 }
 
 footer{
-  /*width: 100%;*/
   background-color: #C6d5c5;
   border-radius: 0px 0px 10px 10px;
-  /*position: fixed;*/
-  /*bottom: 0;*/
+  -moz-border-radius: 0px 0px 10px 10px;
+  -webkit-border-radius: 0px 0px 10px 10px;
+}
+
+.footerContainer{
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.footerItem{
+  padding-left: 10%;
+}
+
+@media screen and (max-width: 900px){
+
+    #contenido{
+      margin: auto;
+      width: 100% !important;
+    }
+
+    header{
+      height: 120px;
+    }
+
+    header h1{
+      font-size: 1.5em;
+      text-align: center;
+      height: 30%;
+      float: none;
+    }
+
+    header nav{
+      float: none;
+    }
+
+    .footerContainer{
+      flex-flow: column nowrap !important;
+    }
+
+    .footerItem{
+      padding-left: 15% !important;
+    }
+
+    .secondaryPictureContainer{
+      flex-flow: column nowrap !important;
+    }
+
+    .secondaryPictureItem{
+      width: 100% !important;
+    }
 }
