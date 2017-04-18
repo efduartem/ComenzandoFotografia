@@ -1,0 +1,45 @@
+body{
+  background-color: #02010a;
+}
+
+header{
+  background-color: #5b7989;
+  border-radius: 10px 10px 0px 0px;
+  /*width: 100%;*/
+  /*position: fixed;*/
+  /*top: 0;*/
+}
+
+header h1{
+  color: white;
+  text-shadow: 2px 2px #02010a;
+  float: left;
+}
+
+#principalPicture{
+  background-color:  #82c3a6;
+  text-align: center;
+}
+
+.secondaryPicture{
+  background-color: #d5c75f;
+  border: solid 1px;
+}
+
+#secondaryPictureLeft{
+  background-color: #d5c75f;
+  border: solid 2px;
+}
+
+#secondaryPictureRight{
+  background-color: #d5c75f;
+  border: solid 2px;
+}
+
+footer{
+  /*width: 100%;*/
+  background-color: #C6d5c5;
+  border-radius: 0px 0px 10px 10px;
+  /*position: fixed;*/
+  /*bottom: 0;*/
+}
